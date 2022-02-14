@@ -17,7 +17,7 @@ For COMP6681001 - Web Programming Final Exam
 9. Run the web using `php artisan serve` and voila it's ready to run!
 
 ## Video Demo
-[![Watch the video](storage\Thumbnail.png)](https://youtu.be/SsNqD9Ahoo4)
+[![Watch the video](/storage/Thumbnail.png)](https://youtu.be/SsNqD9Ahoo4)
 
 Youtube Link : https://youtu.be/SsNqD9Ahoo4
 
