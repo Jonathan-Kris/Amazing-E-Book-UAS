@@ -18,7 +18,7 @@ class RedirectIfNotAdmin
     public function handle(Request $request, Closure $next)
     {
         if(!Auth::check() || Auth::user()->role_id != '1'){
-            return redirect('/');
+            return redirect("/index");
         }
         return $next($request);
     }
