@@ -17,7 +17,7 @@ class ProfileController extends Controller
 
     //Create function for updating Profile
     public function updateProfile(Request $request, $idaccount, $locale = 'en'){
-        $validateData = $request-> validate([
+        $validateData = $request->validate([
             'first_name'=> 'required|max:25|alpha_num',
             'middle_name'=> 'nullable|max:25|alpha_num',
             'last_name'=> 'required|max:25|alpha_num',

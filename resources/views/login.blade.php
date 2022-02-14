@@ -10,6 +10,10 @@
             <div class="alert alert-success">
                 {{ session()->get('sukses') }}
             </div>
+        @elseif (session()->has('error'))
+        <div class="alert alert-danger">
+            {{ session()->get('error') }}
+        </div>
         @endif
 
         <form action="/login/{{ $locale }}" method="post">
@@ -29,7 +33,8 @@
 
             <div class="align-self-end">
                 <div class="text-center">
-                    <a href="/register/{{ $locale }}"><u>{{ __('msg.Dont_have_an_account?') }}</u></a>
+                    <br>
+                    <small><a href="/register/{{ $locale }}">{{ __('msg.Dont_have_an_account?') }}</a></small>
                 </div>
             </div>
         </form>

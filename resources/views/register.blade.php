@@ -59,6 +59,7 @@
             </div>
             <button type="submit w-100" class="btn btn-primary" value="register">{{ __('msg.Register') }}</button>
             <div class="text-center">
+                <br>
                 <small><a href="/login/{{ $locale }}">{{ __('msg.Already_have_an_account?') }}</a></small>
             </div>
         </form>

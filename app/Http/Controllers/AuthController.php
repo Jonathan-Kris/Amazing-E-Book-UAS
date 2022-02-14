@@ -24,6 +24,12 @@ class AuthController extends Controller
             'password'=>['required','min:8']
         ]);
 
+        // If account has been deleted
+        $user = Account::where(['email'=>$request->email])->first();
+        if($user->delete_flag == 1){
+            return redirect("/login/$locale")->with('error', 'Your account has been deleted. If you want to restore your account, please contact Admin.');
+        }
+
         // Remember Me
         $minutes = 60;
         Cookie::queue('EMAIL_COOKIE', $request->email, $minutes); # time in minute(s)

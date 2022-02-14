@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('css/background.css') }}">
-    <title>Amazing E-Book Home</title>
+    {{-- <link rel="stylesheet" href="{{ asset('css/background.css') }}"> --}}
+    <title>Amazing E-Book Jokris</title>
 </head>
 
 <body>
@@ -17,9 +17,9 @@
         @php
             $user_id = Auth::user()->id;
         @endphp
-        <nav class="navbar navbar-light bg-primary">
+        <nav class="navbar navbar-light bg-info">
             <div class="container-fluid">
-                <a class="navbar-brand text-white" href="index/{{ $locale }}"><strong>Amazing E-book</strong></a>
+                <a class="navbar-brand text-white" href="/index/{{ $locale }}"><strong>Amazing E-book</strong></a>
                 <form class="d-flex">
                     <a href="/logout/{{ $locale }}"><button type="button"
                             class="btn btn-warning">{{ __('msg.Logout') }}</button></a>
@@ -36,7 +36,7 @@
                     <a class="navbar-brand py-0 text-dark"
                         href="/profilePage/{{ $locale }}">{{ __('msg.Profile') }}</a>
                     <a class="navbar-brand py-0 text-dark"
-                        href="/accPage/{{ $locale }}">{{ __('msg.Account_Maintenance') }}</a>
+                        href="/account/{{ $locale }}">{{ __('msg.Account_Maintenance') }}</a>
                 </ul>
             </nav>
         @else
@@ -54,9 +54,9 @@
         @endif
     @else
         {{-- Not Logged In --}}
-        <nav class="navbar navbar-light bg-primary">
+        <nav class="navbar navbar-light bg-info">
             <div class="container-fluid">
-                <a class="navbar-brand text-white" href="/index"><strong>Amazing E-book</strong></a>
+                <a class="navbar-brand text-white" href="/{{ $locale }}"><strong>Amazing E-book</strong></a>
             </div>
         </nav>
         <nav class="navbar navbar-dark bg-warning justify-content-center align-items-center py-0">
@@ -73,7 +73,7 @@
 
     {{-- Footer --}}
     <footer class="footer">
-        <footer class="page-fotter text-center text-white bg-primary fixed-bottom py-2">
+        <footer class="page-fotter text-center text-white bg-info fixed-bottom py-2">
             <small>@ Jonathan Kristanto 2022</small>
         </footer>
     </footer>

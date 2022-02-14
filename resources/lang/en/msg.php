@@ -17,7 +17,7 @@
         'CART_IS_EMPTY' => "CART IS EMPTY",
         'Cart' => "Cart",
         'Change_Password' => "Change Password",
-        'Click_here_to_go_to_HomePage' => "Click here to go to HomePage",
+        'Click_here_to_go_to_HomePage' => "Click here to go to Homepage",
         'Confirm_Password' => "Confirm Password",
         'Cover' => "Cover",
         'Date' => "Date",

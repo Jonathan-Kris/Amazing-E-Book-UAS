@@ -1,6 +1,6 @@
 <?php
     return [
-        'Account_Maintenance' => "Pemiliharan Akun",
+        'Account_Maintenance' => "Pemeliharaan Akun",
         'Action' => "Tindakan",
         'Admin' => "Admin",
         'Already_have_an_account?' => "Sudah memiliki akun?",
@@ -17,7 +17,7 @@
         'CART_IS_EMPTY' => "Keranjang kosong",
         'Cart' => "Keranjang",
         'Change_Password' => "Ganti kata sandi",
-        'Click_here_to_go_to_HomePage' => "Klik ini untuk pergi ke Home Page",
+        'Click_here_to_go_to_HomePage' => "Klik ini untuk pergi ke Homepage",
         'Confirm_Password' => "Konfirmasi kata sandi",
         'Cover' => "Sampul",
         'Date' => "Tanggal",

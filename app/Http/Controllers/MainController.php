@@ -14,4 +14,15 @@ class MainController extends Controller
         $books = EBook::all();
         return view('home',['books'=>$books]);
     }
+
+    //create function landing
+    public function indexLanding($locale='en'){
+        App::setlocale($locale);
+        return view('landing');
+    }
+
+    public function indexSuccess($locale='en'){
+        App::setlocale($locale);
+        return view('success');
+    }
 }

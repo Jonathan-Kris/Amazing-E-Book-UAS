@@ -83,12 +83,12 @@
 
                     </select>
 
-                    <label for="berkas">{{ __('msg.Cover') }}</label>
+                    <label for="display_pic">{{ __('msg.Cover') }}</label>
                 </div>
 
 
                 <div class="form-group mb-3 border border-dark d-flex">
-                    <input type="file" class="form-control-file" id="berkas" name="berkas" style="border:none">
+                    <input type="file" class="form-control-file" id="display_pic" name="display_pic" style="border:none">
                 </div>
                 <button type="submit w-100" class="btn btn-primary" value="Save">{{ __('msg.Save') }}</button>
             </form>

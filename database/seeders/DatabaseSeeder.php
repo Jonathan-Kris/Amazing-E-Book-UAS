@@ -47,6 +47,21 @@ class DatabaseSeeder extends Seeder
             'author' => 'J.R.R. Talk Ien',
             'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in'
         ]);
+        EBook::create([
+            'title' => 'Overgrowth',
+            'author' => 'Ro Jin Hyo',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in'
+        ]);
+        EBook::create([
+            'title' => 'Single Levelling',
+            'author' => 'Bandai Namco',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in'
+        ]);
+        EBook::create([
+            'title' => 'Reformation of Earl',
+            'author' => 'Shigeru Miyamoto',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in'
+        ]);
 
         Account::create([
             'role_id' => 1,
